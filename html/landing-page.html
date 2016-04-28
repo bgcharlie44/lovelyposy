@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	p {
+		font-family:avenir;
+		font-size:14px;
+		margin:0 0;
+	}
+
+	.plan-title {
+		font-size:18px !important;
+		font-weight:bold;
+	}
+	.plans {
+		margin-bottom:50px;
+		margin-top:50px;
+		border:1px solid #ccc;
+		display:block;
+		width:200px;
+		text-align:center;
+		padding: 7.5px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	-webkit-box-shadow: -8px 9px 42px -13px rgba(0,0,0,1);
+-moz-box-shadow: -8px 9px 42px -13px rgba(0,0,0,1);
+box-shadow: -8px 9px 42px -13px rgba(0,0,0,1);
+	}
+	.free-vase {
+		color:red;
+	}
+
+	.price p {
+
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+
+	}
+
+
+	</style>
+</head>
+<div class="plans-container">
+<div class="plans">
+  <p class="plan-title">1 Month Plan</p>
+  <p>2 total arrangements</p>
+  <div class="price">
+  	<p>$45</p>
+  </div>
+</div>
+<div class="plans">
+  <p class="plan-title">3 Month Plan</p>
+  <p>6 total arrangements</p>
+  <p class="free-vase">A free vase</p>
+  <div class="price">
+  	<p>$130</p>
+  </div>
+</div>
+<div class="plans">
+  <p class="plan-title">6 Month Plan</p>
+  <p>12 total arrangements</p>
+  <p class="free-vase">A free vase</p>
+  <div class="price">
+  	<p>$250</p>
+  </div>
+</div>
+</div>
+<body>
+  <button class="one_month_popup_open">Get Flowers</button>
+
+ <div id="one_month_popup">
+
+    <p align="center">
+      Enter the recipient Zip Code:
+    </p>
+    <form class="zipcodeverification" align="center">
+        <input type="number" id="zipCodeInputOne" class="zipcodeinputarea">
+        <button class="availabilitybutton" onclick="zipCodeVerificationOne(); return false">Proceed</button>
+            <div id="error_one">
+           </div>
+    </form>
+    
+  </div>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+
+  <!-- Include jQuery Popup Overlay -->
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#one_month_popup').popup();
+
+    });
+  </script>
+
+</body>

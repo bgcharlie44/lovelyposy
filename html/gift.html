@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Give a gift - Lovely Posy</title>
+  	<meta name="keywords" content="flower subscription, flower gift ideas, mother's day flowers, valentine's day flowers, flower box, curated arrangements, los angeles flowers, flower arrangements, flowers every week, curated bouquets, flowers for home, flowers for work, flowers for office, curated flower bundles">
+  	<meta name="description" content="We help you refresh your vase.  Curated flower arrangements for your home or office.  Whether it's every week, or twice a month, you choose the frequency.  Non-recurring gifts available.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./lovelyposy.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<style>
+body {
+  background-color: #eaeaea;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+	    <div class="container-fluid">
+	      <!-- Brand and toggle get grouped for better mobile display -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <img class="navbar-brand" alt="Lovely Posy" src="./images/Lovely-Posy-Logo.png">
+	      </div>
+
+	      <!-- Collect the nav links, forms, and other content for toggling -->
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav navbar-right">
+	          <li><a href="./index.html">Home<span class="sr-only">(current)</span></a></li>
+	          <li><a href="./about-us.html">About Us</a></li>
+	          <li><a href="./gift.html">Give a Gift</a></li>
+	          <li><a href="./past-refreshes.html">Past Refreshes</a></li>
+	           <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="./faq.html">FAQ</a></li>
+	              <li><a href="./delivery-dates.html">Delivery Dates</a></li>
+	              <li><a href="./contact.html">Contact</a></li>
+	            </ul>
+	          </li>
+	          <li><a class="btn-success" href="./subscribe.html">Refresh Now</a></li>
+	        </ul>
+	      </div><!-- /.navbar-collapse -->
+	    </div><!-- /.container-fluid -->
+	    <div class="container-fluid timer-container">
+    MAY sign up ends <b>WEDNESDAY, MAY 4 at 11PT</b>
+    </div>
+	 </nav>
+
+
+	<div class="container spacer">
+	</div>
+ 	 <div class="container" id="gift-div">
+   		<h3>Choose a gift</h3>
+		<p>Next gift arrives on <strong><u>Friday, MAY 6</u></strong></p>
+		<p>order 48 hours prior</p>
+		
+    	<div class="row">
+      		<div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        	<img class="img-responsive" src="./images/1MONTH.png">
+	        <h3>1 Month Gift</h3>
+	        <p><strong>$50</strong></p>
+	        <p>2 arrangements</p>
+	        <p>Includes Vase</p>
+	    	<p>& Free Delivery</p>
+	        <button class="btn-success one_month_popup_open" href="#">Gift This</button>
+	        <p><i>Gifts are non-recurring</p></i>
+	        <div class="container" id="one_month_popup">
+		        <p align="center">
+	      
+	       
+		         Enter the recipient Zip Code: </p>
+		        <form class="zipcodeverification" align="center">
+		         	<div class="row">
+		            	<div class="vcenter">
+		                <input type="number" id="zipCodeInputOne" class="zipcodeinputarea">
+		            	</div>
+		            	<div class="vcenter">
+		                <button class="availabilitybutton btn-success vcenter" onclick="zipCodeVerificationOne(); return false"><span class="glyphicon glyphicon-arrow-right"></span></button>
+		            	</div>
+		         	</div>
+		            <div id="error_one">
+		            </div>
+	        	</form>
+
+      		</div>
+
+
+				  <!-- Include jQuery Popup Overlay -->
+				  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
+
+				  <script>
+				    $(document).ready(function() {
+
+				      // Initialize the plugin
+				      $('#one_month_popup').popup();
+				     
+
+				    });
+				  </script>
+      		</div>
+      <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+      <img class="img-responsive" src="./images/3MONTH.png">
+        <h3>3 Month Gift</h3>
+        <p><strong>$140</strong></p>
+        <p>6 arrangements</p>
+        <p>Includes Vase</p>
+	    <p>& Free Delivery</p>
+        <button class="btn-success three_month_popup_open" href="#">Gift This</button>
+   		<p><i>Gifts are non-recurring</p></i>
+       
+		  <!-- Add content to the popup -->
+		  <div class="container" id="three_month_popup">
+        <p align="center">
+      
+       
+         Enter the recipient Zip Code: </p>
+        <form class="zipcodeverification" align="center">
+
+          <div class="row">
+              <div class="vcenter">
+                <input type="number" id="zipCodeInputThree" class="zipcodeinputarea">
+              </div>
+              <div class="vcenter">
+                <button class="availabilitybutton btn-success vcenter" onclick="zipCodeVerificationThree(); return false"><span class="glyphicon glyphicon-arrow-right"></span></button>
+              </div>
+            </div>
+                <div id="error_three">
+               </div>
+        </form>
+
+      </div>
+
+
+		  <script>
+		    $(document).ready(function() {
+
+		      // Initialize the plugin
+		      $('#three_month_popup').popup();
+
+		    });
+		  </script>
+
+      </div>
+    </div>
+  </div>
+<div class="container social-container center-block">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="row">
+        <a href="http://www.facebook.com/lovelposy" target="_blank"><img class="img-responsive" src="./images/facebook.png"></a>
+        <a href="http://www.twitter.com/lovelyposy" target="_blank"><img class="img-responsive" src="./images/twitter.png"></a>
+        <a href="http://www.instagram.com/lovely.posy" target="_blank"><img class="img-responsive" src="./images/instagram.png"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<footer>
+	<div class="container footer-container">
+		<a href="./privacy-policy.html" class="text-center footer-links">Privacy Policy</a>
+		<a href="./terms.html"class="text-center footer-links">Terms of Service</a>
+	</div>
+	<div class="logo-container">
+		<img class="img-responsive footer-logo" alt="Lovely Posy" src="./images/Lovely-Posy-White-Logo.png">
+	</div>
+<script> 
+  function zipCodeVerificationOne() {
+            if (document.getElementById("zipCodeInputOne").value >= 90001 && document.getElementById("zipCodeInputOne").value <= 91608)  {
+                window.location.href = "./1-month-gift-checkout.html";
+            } else if (document.getElementById("zipCodeInputOne").value > 10000  && (document.getElementById("zipCodeInputOne").value) < 99999) {
+                window.location.href = "./gift-zipcode-decline.html";
+            } else {
+              document.getElementById('error_one').innerHTML="Please enter a valid Zip Code";
+        }}
+
+  function zipCodeVerificationThree() {
+            if (document.getElementById("zipCodeInputThree").value >= 90001 && document.getElementById("zipCodeInputThree").value <= 91608)  {
+                window.location.href = "./3-month-gift-checkout.html";
+            } else if (document.getElementById("zipCodeInputThree").value > 10000  && (document.getElementById("zipCodeInputThree").value) < 99999) {
+                window.location.href = "./gift-zipcode-decline.html";
+            } else {
+              document.getElementById('error_three').innerHTML="Please enter a valid Zip Code";
+        }}
+  
+    </script>
+</footer>
+</html>

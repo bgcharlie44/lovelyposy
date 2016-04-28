@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Susbcribe to Lovely Posy</title>
+  <meta name="keywords" content="flower subscription, flower box, curated arrangements, los angeles flowers, flower arrangements, flowers every week, curated bouquets, flowers for home, flowers for work, flowers for office, curated flower bundles">
+  <meta name="description" content="Choose your Lovely Posy subscription frequency: every week or twice monthly">
+  <meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./lovelyposy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+
+</script>
+<style>
+
+html {
+  background-color:#242424;
+}
+body {
+  background-color: #eaeaea;
+}
+</style>
+</head>
+
+
+<button class="btn-success">
+
+
+</button>
+
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <img class="navbar-brand" alt="Lovely Posy" src="./images/Lovely-Posy-Logo.png">
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./gift.html">Give a Gift</a></li>
+          <li><a href="./past-refreshes.html">Past Refreshes</a></li>
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="./delivery-dates.html">Delivery Dates</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </li>
+          <li><a class="btn-success" href="./subscribe.html">Refresh Now</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    
+
+    <div class="container-fluid timer-container">
+    MAY sign up ends <b>WEDNESDAY, MAY 4 at 11PT</b>
+    </div>
+
+  </nav>
+
+
+
+  <div class="container-fluid" id="frequency">
+    <h3>Choose your frequency</h3>
+    <div class="row row-centered" id="button-container">
+      <button href="#" class="btn-success" id="show-twice-monthly">Twice a Month</button>
+      <button href="#" class="btn-success" id="show-every-week">Every Week</button>
+    </div>
+  </div>
+
+  <div class="container" id="twice-monthly-div">
+    <h3>Choose your plan</h3>
+    <p>Delivered on 1st & 3rd Tuesday every month
+    <p>Delivery is always FREE </p>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <img class="img-responsive" src="./images/1MONTH.png">
+        <h3>1 Month Plan</h3>
+        <p><strong>$45 / mo</strong></p>
+        <p>Cancel at any time</p>
+        <p>Automatically recurs</p>
+        <button class="btn-success one_month_popup_open" href="#">Refresh Now</button>
+       
+        	<div class="container" id="one_month_popup">
+        <p align="center">
+      
+       
+         Enter the recipient Zip Code: </p>
+        <form class="zipcodeverification" align="center">
+
+          <div class="row">
+              <div class="vcenter">
+                <input type="number" id="zipCodeInputOne" class="zipcodeinputarea">
+              </div>
+              <div class="vcenter">
+                <button class="availabilitybutton btn-success vcenter" onclick="zipCodeVerificationOne(); return false"><span class="glyphicon glyphicon-arrow-right"></span></button>
+              </div>
+            </div>
+                <div id="error_one">
+               </div>
+        </form>
+
+      </div>
+				  <!-- Include jQuery Popup Overlay -->
+				  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.10/jquery.popupoverlay.js"></script>
+
+				  <script>
+				    $(document).ready(function() {
+
+				      // Initialize the plugin
+				      $('#one_month_popup').popup();
+				     
+
+				    });
+				  </script>
+      		</div>
+      <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+      <img class="img-responsive" src="./images/3MONTH.png">
+        <h3>3 Month Plan</h3>
+        <p><strong>$43.33 / mo</strong></p>
+        <p>Total cost $130</p>
+        <p>Free Vase to start!</p>
+        <button class="btn-success three_month_popup_open" href="#">Refresh Now</button>
+   
+       
+		  <!-- Add content to the popup -->
+		  <div class="container" id="three_month_popup">
+        <p align="center">
+      
+       
+         Enter the recipient Zip Code: </p>
+        <form class="zipcodeverification" align="center">
+
+          <div class="row">
+              <div class="vcenter">
+                <input type="number" id="zipCodeInputThree" class="zipcodeinputarea">
+              </div>
+              <div class="vcenter">
+                <button class="availabilitybutton btn-success vcenter" onclick="zipCodeVerificationThree(); return false"><span class="glyphicon glyphicon-arrow-right"></span></button>
+              </div>
+            </div>
+                <div id="error_three">
+               </div>
+        </form>
+
+      </div>
+
+
+		  <script>
+		    $(document).ready(function() {
+
+		      // Initialize the plugin
+		      $('#three_month_popup').popup();
+
+		    });
+		  </script>
+
+      </div>
+      <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+      <img class="img-responsive" src="./images/6MONTH.png">
+        <h3>6 Month Plan</h3>
+        <p><strong>$41.67 / mo</strong></p>
+        <p>Total cost $250</p>
+        <p>Free Vase to start!</p>
+        <button class="btn-success six_month_popup_open" href="#">Refresh Now</button>
+         
+
+		  <!-- Add content to the popup -->
+		  <div class="container" id="six_month_popup">
+		    <p align="center">
+		  
+		   
+		     Enter the recipient Zip Code: </p>
+		    <form class="zipcodeverification" align="center">
+
+		    	<div class="row">
+		        	<div class="vcenter">
+		        		<input type="number" id="zipCodeInputSix" class="zipcodeinputarea">
+		        	</div>
+		        	<div class="vcenter">
+		        		<button class="availabilitybutton btn-success vcenter" onclick="zipCodeVerificationSix(); return false"><span class="glyphicon glyphicon-arrow-right"></span></button>
+		        	</div>
+		        </div>
+		            <div id="error_six">
+		           </div>
+		    </form>
+
+		  </div>
+
+		  <!-- Include jQuery -->
+
+		  <script>
+		    $(document).ready(function() {
+
+		      // Initialize the plugin
+		      $('#six_month_popup').popup();
+
+		    });
+		  </script>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" id="every-week-div">
+
+ <div class="jumbotron image-overlay image-overlay-everyweek">
+  <img class="img-responsive everyweek-banner homepage-banner" src="./images/homepage-resized.jpg">
+</div>
+
+
+
+    <div class="container everyweek-copy-container">
+       <h2 class="col-xs-12 everyweek-tagline">Your Refresh, upgraded.</h2>
+        <div class="row">
+            <div class="container icon-container col-sm-6">
+                  <div class="row">
+                    <div class="container-fluid col-xs-6">
+                      <span class="fa fa-calendar fa-3x everyweek-icons text-justify"></span> 
+                      <p>Brilliantly curated arrangements, every Monday</p>
+                    </div>
+                    <div class="container-fluid col-xs-6">
+                      <span class="fa fa-stethoscope fa-3x everyweek-icons"></span> 
+                      <p>Floral freshness for your office waiting room or desk</p>
+                    </div>
+                  </div>
+                  <div class="row secondrow-icons">
+                    <div class="container-fluid col-xs-6">
+                      <span class="fa fa-smile-o fa-3x everyweek-icons"></span>
+                      <p>4 (sometimes 5) arrangements a month</p>
+                    </div>
+                    <div class="container-fluid col-xs-6">
+                      <span class="fa fa-truck fa-3x everyweek-icons"></span>
+                      <p>Free delivery</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="container everyweek-price-container">
+              <div class="row">
+                <h3>$99 / month</h3>
+                <button class="btn-success everyweek_popup_open center-block banner-button">Refresh Every Week</button>
+              </div>
+              <div class="container" id="everyweek_popup">
+                  <p align="center">
+                
+                 
+                   Enter the recipient Zip Code: </p>
+                  <form class="zipcodeverification" align="center">
+
+                    <div class="row">
+                        <div class="vcenter">
+                          <input type="number" id="zipCodeInputEveryWeek" class="zipcodeinputarea">
+                        </div>
+                        <div class="vcenter">
+                          <button class="availabilitybutton btn-success vcenter" onclick="zipCodeVerificationEveryWeek(); return false"><span class="glyphicon glyphicon-arrow-right"></span></button>
+                        </div>
+                    </div>
+                          <div id="error_everyweek">
+                         </div>
+                  </form>
+
+              </div>
+
+
+      <script>
+        $(document).ready(function() {
+
+          // Initialize the plugin
+          $('#everyweek_popup').popup();
+
+        });
+      </script>
+            </div>
+        </div>
+    </div>
+
+</div>
+           
+
+  
+<div class="container social-container center-block">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="row">
+        <a href="http://www.facebook.com/lovelposy" target="_blank"><img class="img-responsive" src="./images/facebook.png"></a>
+        <a href="http://www.twitter.com/lovelyposy" target="_blank"><img class="img-responsive" src="./images/twitter.png"></a>
+        <a href="http://www.instagram.com/lovely.posy" target="_blank"><img class="img-responsive" src="./images/instagram.png"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<footer>
+	<div class="container footer-container">
+		<a href="./privacy-policy.html" class="text-center footer-links">Privacy Policy</a>
+    <a href="./terms.html"class="text-center footer-links">Terms of Service</a>
+	</div>
+	<div class="logo-container">
+		<img class="img-responsive footer-logo" alt="Lovely Posy" src="./images/Lovely-Posy-White-Logo.png">
+	</div>
+
+  <script>
+
+
+$(document).ready(function() {
+	$("#every-week-div").hide();
+	$("#twice-monthly-div").hide();
+  $("#show-every-week").click(function() {
+  	$("#every-week-div").fadeIn(700);
+  	$(window).scrollTop(80);
+  	$("#twice-monthly-div").hide();
+  	// $("#every-week-div").addClass("visible").removeClass("hidden");
+  	// $("#every-week-div").fadeToggle(500,"linear");
+  // 	$("#every-week-div").animate({"opacity":".5"});
+  // 	$("#every-week-div").show();
+    // $("#twice-monthly-div").addClass("hidden").removeClass("visible");
+
+  });
+
+
+  $("#show-twice-monthly").click(function() {
+  	$("#twice-monthly-div").fadeIn(700);
+  	$(window).scrollTop(80);
+  	$("#every-week-div").hide();
+  	// $("#twice-monthly-div").fadeToggle(500,"linear");
+  //   $("#twice-monthly-div").show();
+  	// $("#twice-monthly-div").addClass("visible").removeClass("hidden");
+   //  $("#every-week-div").addClass("hidden").removeClass("visible");
+  });
+
+});
+
+
+  </script>
+  <script> 
+  function zipCodeVerificationOne() {
+            if (document.getElementById("zipCodeInputOne").value >= 90001 && document.getElementById("zipCodeInputOne").value <= 91608)  {
+                window.location.href = "./1-month-plan-checkout.html";
+            } else if (document.getElementById("zipCodeInputOne").value > 10000  && (document.getElementById("zipCodeInputOne").value) < 99999) {
+                window.location.href = "./sub-zipcode-decline.html";
+            } else {
+              document.getElementById('error_one').innerHTML="Please enter a valid Zip Code";
+        }}
+
+  function zipCodeVerificationThree() {
+            if (document.getElementById("zipCodeInputThree").value >= 90001 && document.getElementById("zipCodeInputThree").value <= 91608)  {
+                window.location.href = "./3-month-plan-checkout.html";
+            } else if (document.getElementById("zipCodeInputThree").value > 10000  && (document.getElementById("zipCodeInputThree").value) < 99999) {
+                window.location.href = "./sub-zipcode-decline.html";
+            } else {
+              document.getElementById('error_three').innerHTML="Please enter a valid Zip Code";
+        }}
+  
+
+  function zipCodeVerificationSix() {
+            if (document.getElementById("zipCodeInputSix").value >= 90001 && document.getElementById("zipCodeInputSix").value <= 91608)  {
+                window.location.href = "./6-month-plan-checkout.html";
+            } else if (document.getElementById("zipCodeInputSix").value > 10000  && (document.getElementById("zipCodeInputSix").value) < 99999) {
+                window.location.href = "./sub-zipcode-decline.html";
+            } else {
+              document.getElementById('error_six').innerHTML="Please enter a valid Zip Code";
+        }}
+
+  function zipCodeVerificationEveryWeek() {
+            if (document.getElementById("zipCodeInputEveryWeek").value >= 90001 && document.getElementById("zipCodeInputEveryWeek").value <= 91608)  {
+                window.location.href = "./everyweek-plan-checkout.html";
+            } else if (document.getElementById("zipCodeInputEveryWeek").value > 10000  && (document.getElementById("zipCodeInputEveryWeek").value) < 99999) {
+                window.location.href = "./sub-zipcode-decline.html";
+            } else {
+              document.getElementById('error_everyweek').innerHTML="Please enter a valid Zip Code";
+        }}
+
+    </script>
+</footer>
+</html>
